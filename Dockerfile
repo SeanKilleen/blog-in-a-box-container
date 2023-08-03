@@ -1,8 +1,8 @@
 # Adapted from https://github.com/timbru31/docker-ruby-node/blob/master/2.7/16/Dockerfile
 # Using dependency references from https://pages.github.com/versions/
 
-# 2.7.3 is GitHub Pages 226 compatible
-ARG RUBY_VERSION=2.7.3
+# 2.7.4 is GitHub Pages 228 compatible
+ARG RUBY_VERSION=2.7.4
 
 FROM ruby:${RUBY_VERSION}
 
