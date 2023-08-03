@@ -9,7 +9,7 @@ FROM ruby:${RUBY_VERSION}
 # NOTE: These args need to stay below the FROM line in order for Docker to recognize them.
 ARG BUILD_DATE
 ARG VCS_REF
-ARG GH_PAGES_VERSION=226
+ARG GH_PAGES_VERSION=228
 ARG NODE_MAJOR_VERSION=16
 
 RUN echo "RUBY_VERSION=${RUBY_VERSION}"
