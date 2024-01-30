@@ -66,5 +66,6 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODE_MAJOR_VERSION}.x | bash -\
 RUN node -v
 RUN npm -v
 RUN npm install -g cspell markdownlint-cli
+RUN npm install -g markdownlint-cli2
 
 EXPOSE 4000
