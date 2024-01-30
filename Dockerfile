@@ -3,8 +3,6 @@
 
 # 2.7.4 is GitHub Pages 228 compatible
 ARG RUBY_VERSION=2.7.4
-# Bundler 2.4.x is the last to support ruby < 3.0.0
-ARG BUNDLER_VERSION=2.4.22
 
 FROM ruby:${RUBY_VERSION}
 
@@ -13,6 +11,8 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG GH_PAGES_VERSION=228
 ARG NODE_MAJOR_VERSION=18
+# Bundler 2.4.x is the last to support ruby < 3.0.0
+ARG BUNDLER_VERSION=2.4.22
 
 RUN echo "RUBY_VERSION=${RUBY_VERSION}"
 RUN echo "BUNDLER_VERSION=${BUNDLER_VERSION}"
