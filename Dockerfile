@@ -3,6 +3,8 @@
 
 # 2.7.4 is GitHub Pages 228 compatible
 ARG RUBY_VERSION=2.7.4
+# Bundler 2.4.x is the last to support ruby < 3.0.0
+ARG BUNDLER_VERSION=2.4.22
 
 FROM ruby:${RUBY_VERSION}
 
@@ -48,7 +50,7 @@ RUN apt-get -y install \
     tzdata \
     dos2unix
 
-RUN gem install bundler
+RUN gem install bundler -v ${BUNDLER_VERSION}
 
 #################################################################
 #                  Installing node                              #
