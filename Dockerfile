@@ -1,18 +1,17 @@
 # Adapted from https://github.com/timbru31/docker-ruby-node/blob/master/2.7/16/Dockerfile
 # Using dependency references from https://pages.github.com/versions/
 
-# 2.7.4 is GitHub Pages 231 compatible
-ARG RUBY_VERSION=2.7.4
+# 3.3.4 is GitHub Pages 232 compatible
+ARG RUBY_VERSION=3.3.4
 
 FROM ruby:${RUBY_VERSION}
 
 # NOTE: These args need to stay below the FROM line in order for Docker to recognize them.
 ARG BUILD_DATE
 ARG VCS_REF
-ARG GH_PAGES_VERSION=231
-ARG NODE_MAJOR_VERSION=20
-# Bundler 2.4.x is the last to support ruby <= 2.7.4
-ARG BUNDLER_VERSION=2.4.22
+ARG GH_PAGES_VERSION=232
+ARG NODE_MAJOR_VERSION=22
+ARG BUNDLER_VERSION=2.5.23
 
 RUN echo "RUBY_VERSION=${RUBY_VERSION}"
 RUN echo "BUNDLER_VERSION=${BUNDLER_VERSION}"
