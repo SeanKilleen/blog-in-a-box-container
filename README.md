@@ -1,6 +1,6 @@
 # Blog-in-a-Box Container
 
-A repository that hosts the container for [blog-in-a-box](https://github.com/excellalabs/blog-in-a-box) and functions as a devcontainer for blogs operating on GitHub Pages.
+A repository that hosts the container for [blog-in-a-box](https://github.com/SeanKilleen/blog-in-a-box) and functions as a devcontainer for blogs operating on GitHub Pages.
 
 We maintain and publish the container separately so that we can reference it in Blog-in-a-Box to start the dev container quickly.
 
