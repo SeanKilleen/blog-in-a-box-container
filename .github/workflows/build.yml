@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         VERSIONS: [ {ruby: 2.7.3, bundler: 2.4.22, ghpages: 226}, {ruby: 2.7.4, bundler: 2.4.22, ghpages: 231}, {ruby: 3.3.4, bundler: 2.5.23, ghpages: 232}]
-        NODE_MAJOR_VERSION: [20,22,23,24]
+        NODE_MAJOR_VERSION: [20,22,23]
     runs-on: ubuntu-latest
     env:
       RUBY_VERSION: ${{ matrix.VERSIONS.ruby }}
